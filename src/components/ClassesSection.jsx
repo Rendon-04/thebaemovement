@@ -10,25 +10,27 @@ function ClassesSection() {
       description:
         "Our signature Pilates experience set to live Banda, an energizing, culturally rooted flow that blends strength, rhythm, and community in one unforgettable class.",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/588f0f0328bd1653e1d827c7988b01d8ff63d146?width=1556",
+        "/banda.jpg",
       features: [
         {
           icon: "https://api.builder.io/api/v1/image/assets/TEMP/49e841e3f63baf55a5bf58c4ea8b492ccdf367ee?width=68",
           title: "Rhythm-Led Flow",
           description:
-            "A Pilates sequence designed to move with the music, controlled, powerful, and driven by the live energy in the room.",
+            "A Pilates sequence designed to move with the music, control, power, and driven by the live energy in the room.",
         },
         {
           icon: "https://api.builder.io/api/v1/image/assets/TEMP/9d4e4b631e1ad6189bc080de5132af97137d13e6?width=68",
           title: "Strength + Sculpt",
           description:
-            "Core, glutes, and full-body strength work that leaves you feeling accomplished, grounded, and proud of what your body can do.",
+            "Core, glutes, and full-body strength work that leaves you feeling accomplished and proud of what your body can do.",
         },
         {
           icon: "https://api.builder.io/api/v1/image/assets/TEMP/210712b163db78b144cd7f63b1aefacb2b461a76?width=68",
           title: "Culture & Community",
           description:
             "A space where women feel seen and celebrated, honoring culture through movement, music, and shared energy.",
+          image:
+        "thebaemovement/public/Screenshot 2025-12-19 at 11.30.58 AM.png",
         },
         {
           icon: "https://api.builder.io/api/v1/image/assets/TEMP/aa63d0c82877627c09df9c2ff976f1e2567b083c?width=68",
@@ -44,8 +46,7 @@ function ClassesSection() {
       subtitle: "Run & Sculpt",
       description:
         "A performance driven workout that pairs a runner’s high with a sculpt-focused finish. Built for women who want to sweat, push, and leave feeling strong.",
-      image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/588f0f0328bd1653e1d827c7988b01d8ff63d146?width=1556",
+        image: "/runnandsculpt.png",
       features: [
         {
           icon: "https://api.builder.io/api/v1/image/assets/TEMP/49e841e3f63baf55a5bf58c4ea8b492ccdf367ee?width=68",
@@ -80,7 +81,7 @@ function ClassesSection() {
       description:
         "Curated experiences beyond the workout, designed to reset your mind, reconnect with your body, and meet women who are on the same journey.",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/588f0f0328bd1653e1d827c7988b01d8ff63d146?width=1556",
+        "/wellnesspopup.png",
       features: [
         {
           icon: "https://api.builder.io/api/v1/image/assets/TEMP/49e841e3f63baf55a5bf58c4ea8b492ccdf367ee?width=68",
@@ -115,7 +116,7 @@ function ClassesSection() {
       description:
         "Intentional hangouts for women who want community, relaxed, fun, and designed to help you meet people without it feeling awkward or forced.",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/588f0f0328bd1653e1d827c7988b01d8ff63d146?width=1556",
+        "/social.jpg",
       features: [
         {
           icon: "https://api.builder.io/api/v1/image/assets/TEMP/49e841e3f63baf55a5bf58c4ea8b492ccdf367ee?width=68",

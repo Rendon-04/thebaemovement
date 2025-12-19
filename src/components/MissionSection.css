@@ -46,7 +46,7 @@
 
 .value-card {
   display: flex;
-  width: 294px;
+  width: 264px;
   flex-direction: column;
   align-items: center;
   gap: 16px;
