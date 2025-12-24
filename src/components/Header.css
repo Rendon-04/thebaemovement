@@ -89,3 +89,169 @@
 .shop-button:hover {
   opacity: 0.9;
 }
+
+
+/* =========================
+   Mobile styles
+   ========================= */
+   @media (max-width: 768px) {
+    .header {
+      padding: 20px 0;
+    }
+  
+    .header-container {
+      width: 100%;
+      padding: 0 20px;
+    }
+  
+    .logo-image {
+      width: 36px;
+      height: 36px;
+    }
+  
+    .logo-text {
+      font-size: 18px;
+    }
+  
+    .nav {
+      gap: 20px;
+    }
+  
+    .nav-link {
+      font-size: 14px;
+    }
+  
+    .shop-button {
+      padding: 10px 14px;
+      font-size: 13px;
+    }
+  }
+  
+
+  /* =========================
+   Mobile hamburger menu
+   ========================= */
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.menu-bar {
+  display: block;
+  width: 26px;
+  height: 2px;
+  margin: 5px 0;
+  background: var(--default-white);
+  border-radius: 2px;
+}
+
+/* Dropdown */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--primary-green);
+  box-shadow: 0px 10px 24px rgba(0,0,0,0.18);
+  padding: 16px 20px;
+  z-index: 999;
+
+
+}
+
+.mobile-menu.is-open {
+  display: block;
+}
+
+.mobile-link {
+  display: block;
+  padding: 12px 0;
+  color: var(--default-white);
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.14);
+}
+
+.mobile-link:last-of-type {
+  border-bottom: none;
+}
+
+.mobile-shop-button {
+  margin-top: 14px;
+  display: block;
+  text-align: center;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: var(--default-white);
+  color: var(--primary-green);
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+/* Mobile behavior */
+@media (max-width: 768px) {
+  .header-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .shop-button {
+    display: none; 
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* If you need logo text to wrap nicer */
+  .logo-text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+/* ✅ Mobile-only hamburger styling */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;     /* stack bars vertically */
+    align-items: center;
+    justify-content: center;
+    gap: 6px;                   /* space between bars */
+    width: 44px;                /* tap target */
+    height: 44px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-toggle .menu-bar {
+    display: block;
+    width: 28px;                /* ✅ prevents long line */
+    height: 3px;
+    background: var(--default-white);
+    border-radius: 999px;
+    margin: 0;                  /* ✅ remove the old margin */
+    flex: 0 0 auto;             /* ✅ prevents stretching */
+    max-width: 28px;            /* ✅ extra safety */
+  }
+}

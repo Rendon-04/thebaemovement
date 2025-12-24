@@ -90,3 +90,95 @@
   font-weight: 400;
   line-height: 28px;
 }
+
+
+/* =========================
+   Mission responsive styles
+   ========================= */
+
+/* Tablet / small desktop */
+@media (max-width: 1100px) {
+  .mission-header {
+    padding: 0 24px;
+  }
+
+  .mission-description {
+    width: 100%;
+    max-width: 720px;   /* closer to desktop rhythm */
+    margin: 0 auto;     /* ensures it's centered */
+    padding: 0;         /* padding is handled by header */
+  }
+
+  .mission-values {
+    padding: 0 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .mission-section {
+    margin-top: 80px;       
+    padding-top: 2px;
+    padding-bottom: 60px;
+    gap: 48px;
+  }
+
+  .mission-header {
+    padding: 0 20px;
+  }
+
+  .mission-title {
+    font-size: 34px;
+    line-height: 1.15;
+  }
+
+  .mission-description {
+    width: 100%;
+    max-width: 640px;   
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .mission-values {
+    gap: 24px;
+    padding: 0 20px;
+  }
+
+  .value-card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .value-icon-wrapper {
+    width: auto;
+    gap: 16px;
+  }
+
+  .value-icon {
+    width: 64px;
+    height: 58px;
+  }
+
+  .value-title {
+    font-size: 18px;
+  }
+
+  .value-description {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 390px) {
+  .mission-title {
+    font-size: 30px;
+  }
+
+  .mission-description {
+    max-width: 560px; 
+  }
+}

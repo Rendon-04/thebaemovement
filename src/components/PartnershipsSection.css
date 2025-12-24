@@ -98,3 +98,111 @@
 .partner-button:hover {
   opacity: 0.9;
 }
+
+
+
+/* =========================
+   Partnerships responsive styles
+   ========================= */
+
+/* Make container fluid under desktop */
+@media (max-width: 1400px) {
+  .partnerships-container {
+    width: 100%;
+    padding: 0 40px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .partnerships-description {
+    width: 100%;
+    max-width: 720px;
+  }
+
+  .partnerships-grid {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .partner-image {
+    width: 360px;
+    height: 300px;
+  }
+
+  .partnerships-title {
+    font-size: 44px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .partnerships-section {
+    padding: 60px 0;
+    gap: 40px;
+  }
+
+  .partnerships-container {
+    width: 100%;
+    padding: 0 20px;
+    gap: 28px;
+  }
+
+  .partnerships-title {
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  .partnerships-description {
+    width: 100%;
+    max-width: 680px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .partnerships-grid-wrapper {
+    gap: 28px;
+  }
+
+  .partnerships-grid {
+    flex-direction: column; 
+    gap: 24px;
+    width: 100%;
+  }
+
+  .partner-card {
+    width: 100%;
+    align-items: center; 
+    gap: 14px;
+  }
+
+  .partner-image {
+    width: 100%;
+    height: 240px;
+    border-radius: 18px;
+  }
+
+  .partner-name {
+    font-size: 18px;
+  }
+
+  .partner-button {
+    width: 100%;
+    text-align: center;
+    padding: 14px 18px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 390px) {
+  .partner-image {
+    height: 210px;
+  }
+
+  .partnerships-title {
+    font-size: 30px;
+  }
+}

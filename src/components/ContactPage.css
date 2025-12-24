@@ -157,6 +157,29 @@
   line-height: 24px;
 }
 
+.contact-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  color: var(--primary-green);
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-social-link:hover {
+  opacity: 0.8;
+}
+
+.instagram-icon {
+  width: 18px;
+  height: 18px;
+}
+
+
+
 @media (max-width: 768px) {
   .contact-page {
     padding: 100px 20px 60px;

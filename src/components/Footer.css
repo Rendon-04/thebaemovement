@@ -101,3 +101,102 @@
   font-weight: 500;
   line-height: 28px;
 }
+
+
+/* =========================
+   Footer responsive styles
+   ========================= */
+
+/* Fluid container under desktop */
+@media (max-width: 1400px) {
+  .footer-container {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .footer-divider {
+    width: 100%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .footer-top,
+  .footer-bottom {
+    gap: 24px;
+  }
+
+  .footer-nav {
+    gap: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer {
+    padding: 48px 0;
+    gap: 32px;
+  }
+
+  .footer-container {
+    width: 100%;
+    padding: 0 20px;
+    gap: 32px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-logo-image {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer-logo-text {
+    font-size: 18px;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .footer-link {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .footer-copyright {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 390px) {
+  .footer-nav {
+    gap: 12px;
+  }
+
+  .footer-link {
+    font-size: 13px;
+  }
+}
