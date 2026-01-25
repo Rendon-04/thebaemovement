@@ -94,6 +94,14 @@
   object-fit: cover;
 }
 
+.classes-image-wrapper.image-wrapper-contain {
+  background-color: #2a0f0f;
+}
+
+.classes-image.image-contain {
+  object-fit: contain;
+}
+
 .classes-info {
   display: flex;
   flex-direction: column;
@@ -198,6 +206,13 @@
 
 .book-button:hover {
   opacity: 0.9;
+}
+
+.book-button:disabled {
+  background: #c3c7c0;
+  color: #6f776e;
+  cursor: not-allowed;
+  opacity: 1;
 }
 
 

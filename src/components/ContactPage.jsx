@@ -1,6 +1,48 @@
+import { useState } from 'react';
 import './ContactPage.css';
 
 function ContactPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [statusMessage, setStatusMessage] = useState('');
+  const APPS_SCRIPT_URL = import.meta.env.VITE_APPS_SCRIPT_URL;
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    if (isSubmitting) return;
+
+    setIsSubmitting(true);
+    setStatusMessage('');
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    const payload = {
+      firstName: formData.get("firstName")?.trim() || "",
+      lastName: formData.get("lastName")?.trim() || "",
+      email: formData.get("email")?.trim() || "",
+      phone: formData.get("phone")?.trim() || "",
+      subject: formData.get("subject")?.trim() || "",
+      message: formData.get("message")?.trim() || "",
+    };    
+    try {
+      const response = await fetch(APPS_SCRIPT_URL, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(payload),
+      });
+      const data = await response.json();
+
+      if (data && data.ok) {
+        form.reset();
+        setStatusMessage('Thanks! Your message has been sent.');
+      } else {
+        setStatusMessage('Sorry, something went wrong. Please try again.');
+      }
+    } catch (error) {
+      setStatusMessage('Sorry, something went wrong. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <div className="contact-page">
       <div className="contact-container">
@@ -10,7 +52,7 @@ function ContactPage() {
             Have questions about The BAE Movement or Partnership? We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.
           </p>
           
-          <form className="contact-form">
+          <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="firstName" className="form-label">First Name</label>
@@ -84,15 +126,20 @@ function ContactPage() {
               ></textarea>
             </div>
             
-            <button type="submit" className="submit-button">
-              Send Message
+            <button type="submit" className="submit-button" disabled={isSubmitting}>
+              {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
+            {statusMessage ? (
+              <p role="status" aria-live="polite">
+                {statusMessage}
+              </p>
+            ) : null}
           </form>
           
           <div className="contact-info">
             <div className="contact-info-item">
               <h3 className="contact-info-title">Email Us</h3>
-              <p className="contact-info-text">ithebaemovement@gmail.com</p>
+              <p className="contact-info-text">thebaemovement@gmail.com</p>
             </div>
             
             <div className="contact-info-item">

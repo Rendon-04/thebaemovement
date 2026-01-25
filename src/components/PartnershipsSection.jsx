@@ -58,7 +58,9 @@ function PartnershipsSection() {
           ))}
         </div>
         
-        <button className="partner-button">Partner with us</button>
+        <a className="partner-button" href="/contact">
+          Partner with us
+        </a>
       </div>
     </section>
   );

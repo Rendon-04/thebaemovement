@@ -90,6 +90,17 @@
   opacity: 0.9;
 }
 
+.shop-button:disabled {
+  background: #cfd5cc;
+  color: #5f6a5f;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.shop-button:disabled svg path {
+  fill: #5f6a5f;
+}
+
 
 /* =========================
    Mobile styles
@@ -198,6 +209,15 @@
   font-weight: 700;
   line-height: 18px;
   text-decoration: none;
+}
+
+.mobile-shop-button.mobile-shop-button-disabled,
+.mobile-shop-button.mobile-shop-button-disabled:visited,
+.mobile-shop-button.mobile-shop-button-disabled:hover,
+.mobile-shop-button.mobile-shop-button-disabled:active {
+  background: #d9dcd4;
+  color: #5f6a5f;
+  cursor: not-allowed;
 }
 
 /* Mobile behavior */

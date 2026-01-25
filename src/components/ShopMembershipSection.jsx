@@ -5,19 +5,26 @@ function ShopMembershipSection() {
     <section className="shop-membership-section">
       <div className="section-wrapper">
         <div className="shop-card">
+          <span className="coming-soon-badge">Coming Soon</span>
           <h2 className="card-title">Shop Our Collection</h2>
           <p className="card-description">
             Explore our curated collection of wellness essentials and BAE-branded merch designed to inspire movement, confidence, and community.
           </p>
-          <button className="shop-cta-button">Shop</button>
+          <button className="shop-cta-button" disabled>
+            Shop
+          </button>
         </div>
         
+        
         <div className="membership-card">
+          <span className="coming-soon-badge">Coming Soon</span>
           <h2 className="card-title card-title-dark">Membership</h2>
           <p className="card-description card-description-dark">
             Join our inner circle and get early access to events, discounted tickets, exclusive meetups, and member-only perks from our brand partners.
           </p>
-          <button className="membership-cta-button">Join Us</button>
+          <button className="membership-cta-button" disabled>
+            Join Us
+          </button>
         </div>
       </div>
     </section>

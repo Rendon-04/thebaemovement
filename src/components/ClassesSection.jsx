@@ -3,148 +3,183 @@ import "./ClassesSection.css";
 
 function ClassesSection() {
   // Curated tabs / sections (each has unique copy + features)
-  const classTabs = [
-    {
-      label: "Pilates con Banda",
-      subtitle: "Pilates con Banda",
-      description:
-        "Our signature Pilates experience set to live Banda, an energizing, culturally rooted flow that blends strength, rhythm, and community in one unforgettable class.",
-      image:
-        "/banda.jpg",
-      features: [
-        {
-          icon: "https://api.builder.io/api/v1/image/assets/TEMP/49e841e3f63baf55a5bf58c4ea8b492ccdf367ee?width=68",
-          title: "Rhythm-Led Flow",
-          description:
-            "A Pilates sequence designed to move with the music, control, power, and driven by the live energy in the room.",
-        },
-        {
-          icon: "https://api.builder.io/api/v1/image/assets/TEMP/9d4e4b631e1ad6189bc080de5132af97137d13e6?width=68",
-          title: "Strength + Sculpt",
-          description:
-            "Core, glutes, and full-body strength work that leaves you feeling accomplished and proud of what your body can do.",
-        },
-        {
-          icon: "https://api.builder.io/api/v1/image/assets/TEMP/210712b163db78b144cd7f63b1aefacb2b461a76?width=68",
-          title: "Culture & Community",
-          description:
-            "A space where women feel seen and celebrated, honoring culture through movement, music, and shared energy.",
-          image:
-        "thebaemovement/public/Screenshot 2025-12-19 at 11.30.58 AM.png",
-        },
-        {
-          icon: "https://api.builder.io/api/v1/image/assets/TEMP/aa63d0c82877627c09df9c2ff976f1e2567b083c?width=68",
-          title: "Event-Level Experience",
-          description:
-            "More than a class, curated lighting, sound, and vibes that feel like a wellness event you’ll want to come back to.",
-        },
-      ],
-    },
 
-    {
-      label: "Run & Sculpt",
-      subtitle: "Run & Sculpt",
-      description:
-        "A performance driven workout that pairs a runner’s high with a sculpt-focused finish. Built for women who want to sweat, push, and leave feeling strong.",
-        image: "/runnandsculpt.png",
-      features: [
-        {
-          icon: "https://api.builder.io/api/v1/image/assets/TEMP/49e841e3f63baf55a5bf58c4ea8b492ccdf367ee?width=68",
-          title: "Cardio + Endurance",
-          description:
-            "A run segment designed to build stamina and confidence, approachable for beginners, challenging for regulars.",
-        },
-        {
-          icon: "https://api.builder.io/api/v1/image/assets/TEMP/9d4e4b631e1ad6189bc080de5132af97137d13e6?width=68",
-          title: "Sculpt Finish",
-          description:
-            "Targeted strength work to tone legs, glutes, core, and arms, the kind of burn that feels worth it.",
-        },
-        {
-          icon: "https://api.builder.io/api/v1/image/assets/TEMP/210712b163db78b144cd7f63b1aefacb2b461a76?width=68",
-          title: "Coach-Guided Form",
-          description:
-            "Clear cues and modifications so you can move safely, progress at your pace, and still feel challenged.",
-        },
-        {
-          icon: "https://api.builder.io/api/v1/image/assets/TEMP/aa63d0c82877627c09df9c2ff976f1e2567b083c?width=68",
-          title: "High-Confidence Energy",
-          description:
-            "A hype, supportive room that makes pushing yourself feel exciting, not intimidating.",
-        },
-      ],
-    },
-
-    {
-      label: "Wellness Pop-Ups",
-      subtitle: "Wellness Pop-Ups",
-      description:
-        "Curated experiences beyond the workout, designed to reset your mind, reconnect with your body, and meet women who are on the same journey.",
-      image:
-        "/wellnesspopup.png",
-      features: [
-        {
-          icon: "https://api.builder.io/api/v1/image/assets/TEMP/49e841e3f63baf55a5bf58c4ea8b492ccdf367ee?width=68",
-          title: "Rotating Themes",
-          description:
-            "Breathwork, sound baths, mobility, journaling, self-care nights, each pop-up brings something fresh and intentional.",
-        },
-        {
-          icon: "https://api.builder.io/api/v1/image/assets/TEMP/9d4e4b631e1ad6189bc080de5132af97137d13e6?width=68",
-          title: "Mind-Body Reset",
-          description:
-            "Space to decompress and recharge, leaving you calmer, clearer, and more connected to yourself.",
-        },
-        {
-          icon: "https://api.builder.io/api/v1/image/assets/TEMP/210712b163db78b144cd7f63b1aefacb2b461a76?width=68",
-          title: "Community Connection",
-          description:
-            "Meet new friends in a low-pressure environment designed for real conversation and genuine connection.",
-        },
-        {
-          icon: "https://api.builder.io/api/v1/image/assets/TEMP/aa63d0c82877627c09df9c2ff976f1e2567b083c?width=68",
-          title: "Local Partners",
-          description:
-            "Collaborations with women-led brands, creators, and wellness practitioners to keep it rooted and real.",
-        },
-      ],
-    },
-
-    {
-      label: "Social Hours",
-      subtitle: "Social Hours",
-      description:
-        "Intentional hangouts for women who want community, relaxed, fun, and designed to help you meet people without it feeling awkward or forced.",
-      image:
-        "/social.jpg",
-      features: [
-        {
-          icon: "https://api.builder.io/api/v1/image/assets/TEMP/49e841e3f63baf55a5bf58c4ea8b492ccdf367ee?width=68",
-          title: "Low-Pressure Vibes",
-          description:
-            "Come solo or bring a friend, the environment is welcoming, easy, and built for natural connection.",
-        },
-        {
-          icon: "https://api.builder.io/api/v1/image/assets/TEMP/9d4e4b631e1ad6189bc080de5132af97137d13e6?width=68",
-          title: "Curated Conversation",
-          description:
-            "Icebreakers and prompts (optional) that make meeting new people feel simple, not cringe.",
-        },
-        {
-          icon: "https://api.builder.io/api/v1/image/assets/TEMP/210712b163db78b144cd7f63b1aefacb2b461a76?width=68",
-          title: "Culture & Celebration",
-          description:
-            "Music, movement, and community energy, a space that feels like a mini celebration of being you.",
-        },
-        {
-          icon: "https://api.builder.io/api/v1/image/assets/TEMP/aa63d0c82877627c09df9c2ff976f1e2567b083c?width=68",
-          title: "After-Event Glow",
-          description:
-            "Leave with new connections, a lighter mood, and plans for what’s next, not just ‘nice meeting you.’",
-        },
-      ],
-    },
-  ];
+    // {
+    //   label: "Run & Sculpt",
+    //   subtitle: "Run & Sculpt",
+    //   description:
+    //     "A performance driven workout that pairs a runner’s high with a sculpt-focused finish. Built for women who want to sweat, push, and leave feeling strong.",
+    //     image: "/runnandsculpt.png",
+    //   features: [
+    //     {
+    //       icon: "https://api.builder.io/api/v1/image/assets/TEMP/49e841e3f63baf55a5bf58c4ea8b492ccdf367ee?width=68",
+    //       title: "Cardio + Endurance",
+    //       description:
+    //         "A run segment designed to build stamina and confidence, approachable for beginners, challenging for regulars.",
+    //     },
+    //     {
+    //       icon: "https://api.builder.io/api/v1/image/assets/TEMP/9d4e4b631e1ad6189bc080de5132af97137d13e6?width=68",
+    //       title: "Sculpt Finish",
+    //       description:
+    //         "Targeted strength work to tone legs, glutes, core, and arms, the kind of burn that feels worth it.",
+    //     },
+    //     {
+    //       icon: "https://api.builder.io/api/v1/image/assets/TEMP/210712b163db78b144cd7f63b1aefacb2b461a76?width=68",
+    //       title: "Coach-Guided Form",
+    //       description:
+    //         "Clear cues and modifications so you can move safely, progress at your pace, and still feel challenged.",
+    //     },
+    //     {
+    //       icon: "https://api.builder.io/api/v1/image/assets/TEMP/aa63d0c82877627c09df9c2ff976f1e2567b083c?width=68",
+    //       title: "High-Confidence Energy",
+    //       description:
+    //         "A hype, supportive room that makes pushing yourself feel exciting, not intimidating.",
+    //     },
+    //   ],
+    const classTabs = [
+      {
+        label: "Bad Bunny & Bouquets",
+        subtitle: "Bad Bunny & Bouquets",
+        description:
+          "A curated listening party and floral-building experience blending music, art, and self-expression. Guests are welcomed with a drink, build their own bouquet, and step into an artistic portrait moment designed to capture their energy and individuality.",
+        image: "/badbunnyandbouquets.png",
+        imageFit: "contain",
+        bookingUrl:
+          "https://www.eventbrite.com/e/bad-bunny-bouquets-a-listening-party-floral-building-experience-in-sf-tickets-1978939492293?utm_experiment=test_share_listing&aff=ebdsshios&sg=8b40b06bc6ac21fcc2acec43e56acf776628a4855f22f6d2dda1e6b119607944078862d8cca044d0873107526d835b5397d57b4d0143b97319151bf9911ea91da8b2fec6d3bcbcc84031e9fa28",
+        features: [
+          {
+            icon: "https://api.builder.io/api/v1/image/assets/TEMP/49e841e3f63baf55a5bf58c4ea8b492ccdf367ee?width=68",
+            title: "Immersive Listening Party",
+            description:
+              "Bad Bunny plays front to back, creating a relaxed, culturally resonant atmosphere that invites you to slow down and fully feel the music.",
+          },
+          {
+            icon: "https://api.builder.io/api/v1/image/assets/TEMP/9d4e4b631e1ad6189bc080de5132af97137d13e6?width=68",
+            title: "Build Your Own Bouquet",
+            description:
+              "Design a personalized bouquet using curated florals, ribbons, and vases to reflect your mood, energy, and what you're stepping into.",
+          },
+          {
+            icon: "https://api.builder.io/api/v1/image/assets/TEMP/210712b163db78b144cd7f63b1aefacb2b461a76?width=68",
+            title: "Artistic Portrait Session",
+            description:
+              "A professional photographer captures styled, intimate self-portraits inspired by florals, emotion, and individuality.",
+          },
+          {
+            icon: "https://api.builder.io/api/v1/image/assets/TEMP/aa63d0c82877627c09df9c2ff976f1e2567b083c?width=68",
+            title: "Intentional Community",
+            description:
+              "An expressive, grounding space to reconnect with yourself and others in a way that feels supportive, creative, and authentic.",
+          },
+        ],
+      },
+    
+      {
+        label: "Pilates con Banda",
+        subtitle: "Pilates con Banda",
+        description:
+          "Our signature Pilates experience set to live Banda, an energizing, culturally rooted flow that blends strength, rhythm, and community in one unforgettable class.",
+        image: "/banda.jpg",
+        bookingUrl: null,
+        features: [
+          {
+            icon: "https://api.builder.io/api/v1/image/assets/TEMP/49e841e3f63baf55a5bf58c4ea8b492ccdf367ee?width=68",
+            title: "Rhythm-Led Flow",
+            description:
+              "A Pilates sequence designed to move with the music, control, power, and driven by the live energy in the room.",
+          },
+          {
+            icon: "https://api.builder.io/api/v1/image/assets/TEMP/9d4e4b631e1ad6189bc080de5132af97137d13e6?width=68",
+            title: "Strength + Sculpt",
+            description:
+              "Core, glutes, and full-body strength work that leaves you feeling accomplished and proud of what your body can do.",
+          },
+          {
+            icon: "https://api.builder.io/api/v1/image/assets/TEMP/210712b163db78b144cd7f63b1aefacb2b461a76?width=68",
+            title: "Culture & Community",
+            description:
+              "A space where women feel seen and celebrated, honoring culture through movement, music, and shared energy.",
+          },
+          {
+            icon: "https://api.builder.io/api/v1/image/assets/TEMP/aa63d0c82877627c09df9c2ff976f1e2567b083c?width=68",
+            title: "Event-Level Experience",
+            description:
+              "More than a class, curated lighting, sound, and vibes that feel like a wellness event you’ll want to come back to.",
+          },
+        ],
+      },
+    
+      {
+        label: "Wellness Pop-Ups",
+        subtitle: "Wellness Pop-Ups",
+        description:
+          "Curated experiences beyond the workout, designed to reset your mind, reconnect with your body, and meet women who are on the same journey.",
+        image: "/wellnesspopup.png",
+        bookingUrl: null,
+        features: [
+          {
+            icon: "https://api.builder.io/api/v1/image/assets/TEMP/49e841e3f63baf55a5bf58c4ea8b492ccdf367ee?width=68",
+            title: "Rotating Themes",
+            description:
+              "Breathwork, sound baths, mobility, journaling, self-care nights, each pop-up brings something fresh and intentional.",
+          },
+          {
+            icon: "https://api.builder.io/api/v1/image/assets/TEMP/9d4e4b631e1ad6189bc080de5132af97137d13e6?width=68",
+            title: "Mind-Body Reset",
+            description:
+              "Space to decompress and recharge, leaving you calmer, clearer, and more connected to yourself.",
+          },
+          {
+            icon: "https://api.builder.io/api/v1/image/assets/TEMP/210712b163db78b144cd7f63b1aefacb2b461a76?width=68",
+            title: "Community Connection",
+            description:
+              "Meet new friends in a low-pressure environment designed for real conversation and genuine connection.",
+          },
+          {
+            icon: "https://api.builder.io/api/v1/image/assets/TEMP/aa63d0c82877627c09df9c2ff976f1e2567b083c?width=68",
+            title: "Local Partners",
+            description:
+              "Collaborations with women-led brands, creators, and wellness practitioners to keep it rooted and real.",
+          },
+        ],
+      },
+    
+      {
+        label: "Social Hours",
+        subtitle: "Social Hours",
+        description:
+          "Intentional hangouts for women who want community, relaxed, fun, and designed to help you meet people without it feeling awkward or forced.",
+        image: "/social.jpg",
+        bookingUrl: null,
+        features: [
+          {
+            icon: "https://api.builder.io/api/v1/image/assets/TEMP/49e841e3f63baf55a5bf58c4ea8b492ccdf367ee?width=68",
+            title: "Low-Pressure Vibes",
+            description:
+              "Come solo or bring a friend, the environment is welcoming, easy, and built for natural connection.",
+          },
+          {
+            icon: "https://api.builder.io/api/v1/image/assets/TEMP/9d4e4b631e1ad6189bc080de5132af97137d13e6?width=68",
+            title: "Curated Conversation",
+            description:
+              "Icebreakers and prompts (optional) that make meeting new people feel simple, not cringe.",
+          },
+          {
+            icon: "https://api.builder.io/api/v1/image/assets/TEMP/210712b163db78b144cd7f63b1aefacb2b461a76?width=68",
+            title: "Culture & Celebration",
+            description:
+              "Music, movement, and community energy, a space that feels like a mini celebration of being you.",
+          },
+          {
+            icon: "https://api.builder.io/api/v1/image/assets/TEMP/aa63d0c82877627c09df9c2ff976f1e2567b083c?width=68",
+            title: "After-Event Glow",
+            description:
+              "Leave with new connections, a lighter mood, and plans for what’s next, not just ‘nice meeting you.’",
+          },
+        ],
+      },
+    ];
+    
 
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -172,11 +207,17 @@ function ClassesSection() {
           </div>
 
           <div className="classes-details">
-            <div className="classes-image-wrapper">
+            <div
+              className={`classes-image-wrapper ${
+                activeTab.imageFit === "contain" ? "image-wrapper-contain" : ""
+              }`}
+            >
               <img
                 src={activeTab.image}
                 alt={activeTab.subtitle}
-                className="classes-image"
+                className={`classes-image ${
+                  activeTab.imageFit === "contain" ? "image-contain" : ""
+                }`}
               />
             </div>
 
@@ -200,9 +241,20 @@ function ClassesSection() {
                 ))}
               </div>
 
-              <button className="book-button" type="button">
-                Book now
-              </button>
+              {activeTab.bookingUrl ? (
+                <a
+                  className="book-button"
+                  href={activeTab.bookingUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Book Now
+                </a>
+              ) : (
+                <button className="book-button" type="button" disabled>
+                  Book Now
+                </button>
+              )}
             </div>
           </div>
         </div>

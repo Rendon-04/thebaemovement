@@ -34,10 +34,29 @@
   border-radius: 35px;
   flex: 1;
   align-self: stretch;
+  position: relative;
 
 
-  padding: 56px 64px;              /* ✅ key */
-  box-shadow: 0 18px 40px rgba(0,0,0,0.18);  /* ✅ key */
+  padding: 56px 64px;             
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);  
+}
+
+.coming-soon-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 2;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(10, 20, 10, 0.85);
+  color: #f3f6ef;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
 }
 
 .shop-card {
@@ -92,6 +111,13 @@
   opacity: 0.9;
 }
 
+.shop-cta-button:disabled {
+  background: #d9dcd4;
+  color: #5f6a5f;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
 .membership-cta-button {
   padding: 12px 24px;
   border-radius: 6px;
@@ -106,6 +132,13 @@
 
 .membership-cta-button:hover {
   opacity: 0.9;
+}
+
+.membership-cta-button:disabled {
+  background: #cdd6c8;
+  color: #6a756a;
+  cursor: not-allowed;
+  opacity: 1;
 }
 
 
