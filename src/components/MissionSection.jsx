@@ -15,7 +15,7 @@ function MissionSection() {
     {
       icon: 'https://api.builder.io/api/v1/image/assets/TEMP/beaefc7a496380533bf5bf286815965967247f7e?width=144',
       title: 'Wellness',
-      description: 'Centering holistic well-being by offering environments that nourish the mind, body, and spirit."'
+      description: 'Centering holistic well-being by offering environments that nourish the mind, body, and spirit.'
     },
     {
       icon: 'https://api.builder.io/api/v1/image/assets/TEMP/9dc12a2c1cb9779ff388a3eb9bad121f2da13efc?width=160',
