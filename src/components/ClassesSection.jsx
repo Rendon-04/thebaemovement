@@ -38,43 +38,6 @@ function ClassesSection() {
     //   ],
     const classTabs = [
       {
-        label: "Bad Bunny & Bouquets",
-        subtitle: "Bad Bunny & Bouquets",
-        description:
-          "A curated listening party and floral-building experience blending music, art, and self-expression. Guests are welcomed with a drink, build their own bouquet, and step into an artistic portrait moment designed to capture their energy and individuality.",
-        image: "/badbunnyandbouquets.png",
-        imageFit: "contain",
-        bookingUrl:
-          "https://www.eventbrite.com/e/bad-bunny-bouquets-a-listening-party-floral-building-experience-in-sf-tickets-1978939492293?utm_experiment=test_share_listing&aff=ebdsshios&sg=8b40b06bc6ac21fcc2acec43e56acf776628a4855f22f6d2dda1e6b119607944078862d8cca044d0873107526d835b5397d57b4d0143b97319151bf9911ea91da8b2fec6d3bcbcc84031e9fa28",
-        features: [
-          {
-            icon: "https://api.builder.io/api/v1/image/assets/TEMP/49e841e3f63baf55a5bf58c4ea8b492ccdf367ee?width=68",
-            title: "Immersive Listening Party",
-            description:
-              "Bad Bunny plays front to back, creating a relaxed, culturally resonant atmosphere that invites you to slow down and fully feel the music.",
-          },
-          {
-            icon: "https://api.builder.io/api/v1/image/assets/TEMP/9d4e4b631e1ad6189bc080de5132af97137d13e6?width=68",
-            title: "Build Your Own Bouquet",
-            description:
-              "Design a personalized bouquet using curated florals, ribbons, and vases to reflect your mood, energy, and what you're stepping into.",
-          },
-          {
-            icon: "https://api.builder.io/api/v1/image/assets/TEMP/210712b163db78b144cd7f63b1aefacb2b461a76?width=68",
-            title: "Artistic Portrait Session",
-            description:
-              "A professional photographer captures styled, intimate self-portraits inspired by florals, emotion, and individuality.",
-          },
-          {
-            icon: "https://api.builder.io/api/v1/image/assets/TEMP/aa63d0c82877627c09df9c2ff976f1e2567b083c?width=68",
-            title: "Intentional Community",
-            description:
-              "An expressive, grounding space to reconnect with yourself and others in a way that feels supportive, creative, and authentic.",
-          },
-        ],
-      },
-    
-      {
         label: "Pilates con Banda",
         subtitle: "Pilates con Banda",
         description:
@@ -179,6 +142,21 @@ function ClassesSection() {
         ],
       },
     ];
+
+  const comingSoonEvents = [
+    {
+      title: "Pilates con Banda",
+      location: "Oakland",
+      date: "March 21st",
+      note: "Stay tuned for tickets — mark your calendars!",
+    },
+    {
+      title: "Mother’s Day Build Your Bouquet + Editorial Photo Shoots",
+      location: "San Francisco",
+      date: "May 2nd",
+      note: "Stay tuned for tickets — mark your calendars!",
+    },
+  ];
     
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -256,6 +234,21 @@ function ClassesSection() {
                 </button>
               )}
             </div>
+          </div>
+
+          <div className="coming-soon">
+            <h3 className="coming-soon-title">Coming Soon</h3>
+            {comingSoonEvents.map((event) => (
+              <div
+                key={`${event.title}-${event.date}`}
+                className="coming-soon-item"
+              >
+                <p className="coming-soon-line">
+                  {event.title} — {event.location} | {event.date}
+                </p>
+                <p className="coming-soon-note">{event.note}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

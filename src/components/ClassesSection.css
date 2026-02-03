@@ -215,6 +215,45 @@
   opacity: 1;
 }
 
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.coming-soon-title {
+  color: var(--gray-800);
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.coming-soon-item {
+  background: #f7f7f2;
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 12px 24px rgba(31, 44, 38, 0.08);
+  border: 1px solid rgba(42, 54, 45, 0.08);
+}
+
+.coming-soon-line {
+  color: var(--gray-800);
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.coming-soon-note {
+  color: var(--gray-800);
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
 
 /* =========================
    Classes responsive styles
@@ -352,6 +391,7 @@
     line-height: 22px;
     text-align: center;
   }
+
 }
 
 /* Extra small phones */

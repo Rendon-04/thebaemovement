@@ -36,7 +36,7 @@ function Header() {
       <div className="header-container">
         <Link to="/" className="logo" onClick={() => setMenuOpen(false)}>
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/5d3710b664537f21b375fa3109a45fc473e92639?width=90"
+            src="/new_baeicon.png"
             alt="The BAE Movement"
             className="logo-image"
           />
