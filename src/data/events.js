@@ -43,7 +43,7 @@ const events = [
   { src: "/events/bad-bunny-bouquets/gallery/Baeevent-33.webp", alt: "BAE Event photo 33", filename: "Baeevent-33.webp" },
   { src: "/events/bad-bunny-bouquets/gallery/Baeevent-34.webp", alt: "BAE Event photo 34", filename: "Baeevent-34.webp" },
   { src: "/events/bad-bunny-bouquets/gallery/Baeevent-35.webp", alt: "BAE Event photo 35", filename: "Baeevent-35.webp" },
-  { src: "/events/bad-bunny-bouquets/gallery/Baeevent-36.webp", alt: "BAE Event photo 36", filename: "Baeevent-36.webp" },
+  // { src: "/events/bad-bunny-bouquets/gallery/Baeevent-36.webp", alt: "BAE Event photo 36", filename: "Baeevent-36.webp" },
   // { src: "/events/bad-bunny-bouquets/gallery/Baeevent-37.webp", alt: "BAE Event photo 37", filename: "Baeevent-37.webp" },
   // { src: "/events/bad-bunny-bouquets/gallery/Baeevent-38.webp", alt: "BAE Event photo 38", filename: "Baeevent-38.webp" },
   // { src: "/events/bad-bunny-bouquets/gallery/Baeevent-39.webp", alt: "BAE Event photo 39", filename: "Baeevent-39.webp" },
