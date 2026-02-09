@@ -72,6 +72,12 @@ function Header() {
           >
             Contact
           </Link>
+          <Link
+            to="/gallery"
+            className={`nav-link ${location.pathname === '/gallery' ? 'nav-link-active' : ''}`}
+          >
+            Gallery
+          </Link>
         </nav>
 
         {/* Desktop shop button (we'll hide on mobile via CSS) */}
@@ -115,6 +121,7 @@ function Header() {
         )}
 
         <Link to="/contact" className="mobile-link" onClick={() => setMenuOpen(false)}>Contact</Link>
+        <Link to="/gallery" className="mobile-link" onClick={() => setMenuOpen(false)}>Gallery</Link>
 
         {/* mobile CTA */}
         <Link

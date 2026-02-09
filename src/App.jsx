@@ -5,6 +5,8 @@ import HomePage from './components/HomePage';
 import ContactPage from './components/ContactPage';
 import Footer from './components/Footer';
 import EventPhotoLibrary from './components/EventPhotoLibrary';
+import BadBunnyBouquetsPortraits from './components/BadBunnyBouquetsPortraits';
+import Gallery from './pages/Gallery';
 
 function App() {
   return (
@@ -15,7 +17,12 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/events/:eventId/photos" element={<EventPhotoLibrary />} />
+          <Route
+            path="/albums/bad-bunny-bouquets-portraits"
+            element={<BadBunnyBouquetsPortraits />}
+          />
         </Routes>
         <Footer />
       </div>

@@ -1,0 +1,214 @@
+.gallery-page {
+  width: 100%;
+  background-color: rgb(15, 49, 22);
+  color: #f4f6f0;
+}
+
+.gallery-hero {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 56px 0 24px;
+  background-color: transparent;
+}
+
+.gallery-container {
+  width: min(1100px, 100%);
+  padding: 0 24px;
+}
+
+.gallery-title {
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 5%;
+}
+
+.gallery-subtitle-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.gallery-subtitle {
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  color: rgba(244, 246, 240, 0.86);
+}
+
+.gallery-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(244, 246, 240, 0.15);
+  border: 1px solid rgba(244, 246, 240, 0.3);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.gallery-divider {
+  height: 1px;
+  margin-top: 24px;
+  background: linear-gradient(
+    90deg,
+    rgba(244, 246, 240, 0) 0%,
+    rgba(244, 246, 240, 0.35) 50%,
+    rgba(244, 246, 240, 0) 100%
+  );
+}
+
+.gallery-section {
+  padding: 12px 0 40px;
+}
+
+.gallery-private {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 32px 0 90px;
+  background-color: transparent;
+}
+
+.gallery-section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.gallery-section-title {
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.gallery-section-subtitle {
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  color: rgba(244, 246, 240, 0.75);
+  margin: 0;
+}
+
+.gallery-private-card {
+  background: linear-gradient(
+    135deg,
+    rgba(244, 246, 240, 0.08),
+    rgba(244, 246, 240, 0.02)
+  );
+  border-radius: 20px;
+  padding: 24px 26px;
+  border: 1px solid rgba(244, 246, 240, 0.2);
+  box-shadow: 0 20px 40px rgba(8, 25, 12, 0.35);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 520px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.gallery-private-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 26px 50px rgba(8, 25, 12, 0.5);
+  border-color: rgba(244, 246, 240, 0.4);
+}
+
+.gallery-private-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gallery-private-lock {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4f6f0;
+  background: rgba(244, 246, 240, 0.12);
+  border: 1px solid rgba(244, 246, 240, 0.25);
+}
+
+.gallery-private-badge {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(244, 246, 240, 0.3);
+  color: rgba(244, 246, 240, 0.9);
+}
+
+.gallery-private-card-title {
+  color: #f4f6f0;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.gallery-private-card-note {
+  color: rgba(244, 246, 240, 0.75);
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.gallery-private-cta {
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #f4f6f0;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.gallery-page .event-carousel-section {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.gallery-page .event-carousel-container {
+  width: 100%;
+  padding: 0;
+}
+
+.gallery-page .event-carousel-title,
+.gallery-page .event-carousel-card-title {
+  color: #f4f6f0;
+}
+
+.gallery-page .event-carousel-button {
+  background: rgba(244, 246, 240, 0.12);
+  border-color: rgba(244, 246, 240, 0.3);
+  color: #f4f6f0;
+}
+
+.gallery-page .event-carousel-button:hover {
+  box-shadow: 0 10px 22px rgba(8, 25, 12, 0.35);
+}
+
+@media (max-width: 768px) {
+  .gallery-hero {
+    padding: 44px 0 20px;
+  }
+
+  .gallery-title {
+    font-size: 38px;
+  }
+
+  .gallery-container {
+    padding: 0 18px;
+  }
+}

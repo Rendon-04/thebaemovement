@@ -1,9 +1,9 @@
 import { useMemo, useRef } from "react";
 import { Link } from "react-router-dom";
 import events from "../data/events";
-import "./EventCarouselSection.css";
+import "./EventPhotosSection.css";
 
-function EventCarouselSection() {
+function EventPhotosSection() {
   const carouselRef = useRef(null);
 
   const carouselItems = useMemo(
@@ -71,4 +71,4 @@ function EventCarouselSection() {
   );
 }
 
-export default EventCarouselSection;
+export default EventPhotosSection;

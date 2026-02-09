@@ -1,7 +1,6 @@
 import HeroSection from './HeroSection';
 import MissionSection from './MissionSection';
 import ClassesSection from './ClassesSection';
-import EventCarouselSection from './EventCarouselSection';
 import PartnershipsSection from './PartnershipsSection';
 import ShopMembershipSection from './ShopMembershipSection';
 
@@ -14,9 +13,6 @@ function HomePage() {
       </section>
       <section id="classes">
         <ClassesSection />
-      </section>
-      <section id="event-photos">
-        <EventCarouselSection />
       </section>
       <section id="partnerships">
         <PartnershipsSection />
