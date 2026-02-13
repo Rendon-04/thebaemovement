@@ -72,7 +72,7 @@ function ClassesSection() {
       //   ],
       // },
       {
-        label: "Spring Equinox Edition",
+        label: "Pilates Spring Equinox Edition",
         subtitle: "Pilates con Banda",
         description:
           "Celebrate the Spring Equinox with our signature Pilates con Banda experience, a live Banda-powered flow that marks a fresh season of energy, strength, and community.",
