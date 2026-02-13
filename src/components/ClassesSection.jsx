@@ -37,41 +37,74 @@ function ClassesSection() {
     //     },
     //   ],
     const classTabs = [
+      // {
+      //   label: "Pilates con Banda",
+      //   subtitle: "Pilates con Banda",
+      //   description:
+      //     "Our signature Pilates experience set to live Banda, an energizing, culturally rooted flow that blends strength, rhythm, and community in one unforgettable class.",
+      //   image: "/banda.jpg",
+      //   bookingUrl: null,
+      //   features: [
+      //     {
+      //       icon: "https://api.builder.io/api/v1/image/assets/TEMP/49e841e3f63baf55a5bf58c4ea8b492ccdf367ee?width=68",
+      //       title: "Rhythm-Led Flow",
+      //       description:
+      //         "A Pilates sequence designed to move with the music, control, power, and driven by the live energy in the room.",
+      //     },
+      //     {
+      //       icon: "https://api.builder.io/api/v1/image/assets/TEMP/9d4e4b631e1ad6189bc080de5132af97137d13e6?width=68",
+      //       title: "Strength + Sculpt",
+      //       description:
+      //         "Core, glutes, and full-body strength work that leaves you feeling accomplished and proud of what your body can do.",
+      //     },
+      //     {
+      //       icon: "https://api.builder.io/api/v1/image/assets/TEMP/210712b163db78b144cd7f63b1aefacb2b461a76?width=68",
+      //       title: "Culture & Community",
+      //       description:
+      //         "A space where women feel seen and celebrated, honoring culture through movement, music, and shared energy.",
+      //     },
+      //     {
+      //       icon: "https://api.builder.io/api/v1/image/assets/TEMP/aa63d0c82877627c09df9c2ff976f1e2567b083c?width=68",
+      //       title: "Event-Level Experience",
+      //       description:
+      //         "More than a class, curated lighting, sound, and vibes that feel like a wellness event you’ll want to come back to.",
+      //     },
+      //   ],
+      // },
       {
-        label: "Pilates con Banda",
+        label: "Spring Equinox Edition",
         subtitle: "Pilates con Banda",
         description:
-          "Our signature Pilates experience set to live Banda, an energizing, culturally rooted flow that blends strength, rhythm, and community in one unforgettable class.",
+          "Celebrate the Spring Equinox with our signature Pilates con Banda experience, a live Banda-powered flow that marks a fresh season of energy, strength, and community.",
         image: "/banda.jpg",
-        bookingUrl: null,
+        bookingUrl: "https://www.eventbrite.com/e/pilates-con-banda-spring-equinox-edition-the-bae-movement-tickets-1982937227627",
         features: [
           {
             icon: "https://api.builder.io/api/v1/image/assets/TEMP/49e841e3f63baf55a5bf58c4ea8b492ccdf367ee?width=68",
-            title: "Rhythm-Led Flow",
+            title: "Equinox Energy",
             description:
-              "A Pilates sequence designed to move with the music, control, power, and driven by the live energy in the room.",
+              "A fresh-season flow designed to help you reset, recharge, and step into spring with intention and strength.",
           },
           {
             icon: "https://api.builder.io/api/v1/image/assets/TEMP/9d4e4b631e1ad6189bc080de5132af97137d13e6?width=68",
             title: "Strength + Sculpt",
             description:
-              "Core, glutes, and full-body strength work that leaves you feeling accomplished and proud of what your body can do.",
+              "Core, glutes, and full-body strength work that leaves you feeling accomplished, energized, and ready for the new season.",
           },
           {
             icon: "https://api.builder.io/api/v1/image/assets/TEMP/210712b163db78b144cd7f63b1aefacb2b461a76?width=68",
             title: "Culture & Community",
             description:
-              "A space where women feel seen and celebrated, honoring culture through movement, music, and shared energy.",
+              "Move to live Banda in a space where women feel seen and celebrated, honoring culture through music, movement, and shared energy.",
           },
           {
             icon: "https://api.builder.io/api/v1/image/assets/TEMP/aa63d0c82877627c09df9c2ff976f1e2567b083c?width=68",
-            title: "Event-Level Experience",
+            title: "Seasonal Experience",
             description:
-              "More than a class, curated lighting, sound, and vibes that feel like a wellness event you’ll want to come back to.",
-          },
-        ],
-      },
-    
+              "A special-edition class with curated vibes, sound, and intention to welcome the Spring Equinox together.",
+            },
+         ],
+      }, 
       {
         label: "Wellness Pop-Ups",
         subtitle: "Wellness Pop-Ups",
@@ -144,12 +177,6 @@ function ClassesSection() {
     ];
 
   const comingSoonEvents = [
-    {
-      title: "Pilates con Banda",
-      location: "Oakland",
-      date: "March 21st",
-      note: "Stay tuned for tickets — mark your calendars!",
-    },
     {
       title: "Mother’s Day Build Your Bouquet + Editorial Photo Shoots",
       location: "San Francisco",
