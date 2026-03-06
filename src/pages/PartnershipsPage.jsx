@@ -30,21 +30,21 @@ const partners = [
 
 const collaborationLanes = [
   {
-    icon: '🛍️',
+    image: '/brandPartners.png',
     title: 'Brand Partners',
     description:
       'Work with us on sampling, product placement, gifting moments, and co-marketing touchpoints across events and content.',
     bestFor: ['Launches', 'IRL activations', 'Community reach']
   },
   {
-    icon: '🧘‍♀️',
+    image: 'welness.png',
     title: 'Wellness & Service Providers',
     description:
       'Bring your expertise to our audience through classes, wellness experiences, recovery offerings, and beauty services.',
     bestFor: ['Expert-led sessions', 'Trial moments', 'Brand trust']
   },
   {
-    icon: '📸',
+    image: 'creatorsMedia.png',
     title: 'Creators & Media',
     description:
       'Capture and co-create stories that highlight culture, wellness, and the women shaping our community.',
@@ -54,22 +54,22 @@ const collaborationLanes = [
 
 const proofPoints = [
   {
-    icon: '✨',
+    image: '/highIntentAudience.png',
     title: 'High-intent Audience',
     subtitle: 'Community-first experiences'
   },
   {
-    icon: '📱',
+    image: '/socialIRL.png',
     title: 'IRL to Social',
     subtitle: 'Content-led activations'
   },
   {
-    icon: '📍',
+    image: '/popUps.png',
     title: 'Pop-ups & Brand Moments',
     subtitle: 'Designed for real connection'
   },
   {
-    icon: '🌉',
+    image: 'bayArea.png',
     title: 'Bay Area Based',
     subtitle: 'Local roots with flexible formats'
   }
@@ -138,7 +138,7 @@ function PartnershipsPage() {
             {proofPoints.map((point) => (
               <article key={point.title} className="pp-proof-card">
                 <span className="pp-proof-icon" aria-hidden="true">
-                  {point.icon}
+                <img src={point.image} alt="" className="pp-lane-icon-image" />
                 </span>
                 <h3>{point.title}</h3>
                 <p>{point.subtitle}</p>
@@ -159,9 +159,9 @@ function PartnershipsPage() {
             {collaborationLanes.map((lane) => (
               <article key={lane.title} className="pp-lane-card">
                 <div className="pp-lane-top">
-                  <span className="pp-lane-icon" aria-hidden="true">
-                    {lane.icon}
-                  </span>
+                <span className="pp-lane-icon" aria-hidden="true">
+                  <img src={lane.image} alt="" className="pp-lane-icon-image" />
+                </span>
                   <h3>{lane.title}</h3>
                 </div>
                 <p className="pp-lane-copy">{lane.description}</p>
