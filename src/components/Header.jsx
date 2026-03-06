@@ -56,13 +56,13 @@ function Header() {
             <>
               <a href="#about" className="nav-link">About</a>
               <a href="#classes" className="nav-link">Classes & Events</a>
-              <a href="#partnerships" className="nav-link">Brands & Partnerships</a>
+              <a href="/partnerships" className="nav-link">Brands & Partnerships</a>
             </>
           ) : (
             <>
               <Link to="/#about" className="nav-link">About</Link>
               <Link to="/#classes" className="nav-link">Classes & Events</Link>
-              <Link to="/#partnerships" className="nav-link">Brands & Partnerships</Link>
+              <Link to="/partnerships" className="nav-link">Brands & Partnerships</Link>
             </>
           )}
 
@@ -110,13 +110,13 @@ function Header() {
           <>
             <a href="#about" className="mobile-link" onClick={(e) => handleAnchorClick(e, 'about')}>About</a>
             <a href="#classes" className="mobile-link" onClick={(e) => handleAnchorClick(e, 'classes')}>Classes & Events</a>
-            <a href="#partnerships" className="mobile-link" onClick={(e) => handleAnchorClick(e, 'partnerships')}>Brands & Partnerships</a>
+            <a href="/partnerships" className="mobile-link" onClick={(e) => handleAnchorClick(e, '/partnerships')}>Brands & Partnerships</a>
           </>
         ) : (
           <>
             <Link to="/#about" className="mobile-link" onClick={() => setMenuOpen(false)}>About</Link>
             <Link to="/#classes" className="mobile-link" onClick={() => setMenuOpen(false)}>Classes & Events</Link>
-            <Link to="/#partnerships" className="mobile-link" onClick={() => setMenuOpen(false)}>Brands & Partnerships</Link>
+            <Link to="/partnerships" className="mobile-link" onClick={() => setMenuOpen(false)}>Brands & Partnerships</Link>
           </>
         )}
 
