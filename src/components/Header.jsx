@@ -110,8 +110,7 @@ function Header() {
           <>
             <a href="#about" className="mobile-link" onClick={(e) => handleAnchorClick(e, 'about')}>About</a>
             <a href="#classes" className="mobile-link" onClick={(e) => handleAnchorClick(e, 'classes')}>Classes & Events</a>
-            <a href="/partnerships" className="mobile-link" onClick={(e) => handleAnchorClick(e, '/partnerships')}>Brands & Partnerships</a>
-          </>
+            <Link to="/partnerships" className="mobile-link" onClick={() => setMenuOpen(false)}>Brands & Partnerships</Link>          </>
         ) : (
           <>
             <Link to="/#about" className="mobile-link" onClick={() => setMenuOpen(false)}>About</Link>
