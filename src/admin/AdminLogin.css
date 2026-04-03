@@ -1,0 +1,121 @@
+.admin-login-page {
+  min-height: 100vh;
+  background: #e8eee4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+.admin-login-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 60, 10, 0.12);
+  padding: 44px 40px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.admin-login-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.admin-login-brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: #003c0a;
+  margin: 0;
+}
+
+.admin-login-badge {
+  display: inline-block;
+  background: #003c0a;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.admin-login-heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #343a40;
+  text-align: center;
+  margin: 0 0 24px;
+}
+
+.admin-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.admin-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.admin-form-group input {
+  padding: 11px 14px;
+  border: 1px solid #cdd5cc;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #343a40;
+  font-family: inherit;
+  background: #fafaf9;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.admin-form-group input:focus {
+  outline: none;
+  border-color: #003c0a;
+  background: #fff;
+}
+
+.admin-login-error {
+  background: #fff3f3;
+  border: 1px solid #ffcccc;
+  border-radius: 6px;
+  color: #c0392b;
+  font-size: 13px;
+  padding: 10px 14px;
+  margin: 0;
+}
+
+.admin-login-btn {
+  background: #003c0a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 13px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: opacity 0.2s;
+  font-family: inherit;
+}
+
+.admin-login-btn:hover {
+  opacity: 0.88;
+}
+
+@media (max-width: 480px) {
+  .admin-login-card {
+    padding: 32px 24px;
+  }
+}
